@@ -6,7 +6,7 @@ class AddTodo3 extends React.Component {
         //console.log("onChange In AddTodo3")
         //console.log(e.target.value)
         this.props.onChange(
-            e.target.value
+            {value:e.target.value}
         )
     }
 

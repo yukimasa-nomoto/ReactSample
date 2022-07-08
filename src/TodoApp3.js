@@ -15,7 +15,9 @@ class TodoApp3 extends React.Component
     onChange(key_value){
         //console.log("onChange In TodoApp3")
         //console.log(key_value)
-        this.setState({value:key_value})
+
+        //this.setState({value:key_value})
+        this.setState(key_value)
     }
 
     add(todoElement){
