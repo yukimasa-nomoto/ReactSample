@@ -21,29 +21,33 @@ class TodoApp3 extends React.Component
     }
 
     add(todoElement){
-       console.log("add In TodoApp3") 
-       console.log(todoElement)
+       //console.log("add In TodoApp3") 
+       //console.log(todoElement)
 
        this.setState({
         todoList: this.state.todoList.concat(todoElement),
         value:""
         })
         //ここでは入ったのは見れなかった
-        console.log({...this.state})
+        //console.log({...this.state})
     }
 
     render(){
         const todoListNode = this.state.todoList.map(element =>{
+
+            //console.log("element in map")
+            //console.log(element.id)
+            //console.log(element.content)
             return(
                 <TodoElement
-                    key={element.id}
+                    id={element.id}
                     content={element.content}
                 />
             )
         })
 
-        console.log("render")
-        console.log({...this.state})
+        //console.log("render")
+        //console.log({...this.state})
         return(
             <div>
                 <h1>ToDo App3</h1>

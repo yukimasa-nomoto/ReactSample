@@ -11,12 +11,12 @@ class AddTodo3 extends React.Component {
     }
 
     add(){
-        console.log("add in AddTodo3")
+        //console.log("add in AddTodo3")
         const todoElement ={
             content:this.props.value,
             id:this.props.todoList.length+1
         }
-        console.log(todoElement)
+        //console.log(todoElement)
         this.props.add(todoElement)
     }
 

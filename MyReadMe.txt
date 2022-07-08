@@ -43,7 +43,7 @@ https://note.com/dragontaro/n/n04e0b9c0cca7
 			todoListをコンポーネント化
 				props使用
 					各クラスごとに渡す中身全体を示している
-					propsにonChangeイベントある
+					propsは、外側で書いたメソッドやプロパティ、全てを使える
 				まず「TodoElement」作成
 				「AddTodo」を作成
 				TodoApp2を作成
