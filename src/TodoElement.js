@@ -1,5 +1,10 @@
 import React from 'react';
 class TodoElement extends React.Component{
+
+    onDelete(){
+        this.props.onDelete(this.props.id)
+    }
+
     render(){
 
         //console.log("render in TodoElement")
@@ -9,6 +14,7 @@ class TodoElement extends React.Component{
         return(
             <li key={this.props.id}>
                 {this.props.content}
+                <button onClick={() => this.onDelete()}>削除</button>
             </li>
         )
     }

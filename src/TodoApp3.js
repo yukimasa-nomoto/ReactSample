@@ -12,6 +12,19 @@ class TodoApp3 extends React.Component
         }
     }
 
+    handleDelete(id){
+        let todoList = this.state.todoList.concat()
+        let index = 0
+
+        todoList.forEach((element , idx) => {
+            if (element.id === id) {
+                index = idx
+              }
+        });
+        todoList.splice(index, 1)
+        this.setState({todoList: todoList})
+    }
+
     onChange(key_value){
         //console.log("onChange In TodoApp3")
         //console.log(key_value)
@@ -42,6 +55,7 @@ class TodoApp3 extends React.Component
                 <TodoElement
                     id={element.id}
                     content={element.content}
+                    onDelete={(id) => this.handleDelete(id)}
                 />
             )
         })

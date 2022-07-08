@@ -56,6 +56,13 @@ https://note.com/dragontaro/n/n04e0b9c0cca7
 					AddTodo3のonChangeを多少変更
 					addも引数つけた
 			一旦コミット
+		７章
+			削除機能実装
+				記事の横に「削除」ボタン追加
+					非破壊的spliceで削除
+		↓
+		完了
+		一旦コミット
 
 
 カーリーブラケット{}
