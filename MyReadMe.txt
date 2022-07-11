@@ -90,6 +90,18 @@ https://newsite-make.com/react-study/
 					Parent.js Child.jsを作成
 					--->動作確認OK
 		一旦コミット(2022/07/11 16:00)
+	https://www.hypertextcandy.com/react-tutorial-04-form-and-events
+		SampleText.js作成
+			--->動作確認OK
+		SampleRadio.js作成
+			--->動作確認OK
+		SampleCheckBox.js作成
+			複数入力可なので、配列でstateを保持
+			stateの直接編集は不可
+			--->動作確認OK
+		SampleSelectBox.js作成
+			--->動作確認OK
+		一旦コミット(2022/07/11 17:40)
 
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
