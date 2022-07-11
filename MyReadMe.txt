@@ -66,11 +66,30 @@ https://note.com/dragontaro/n/n04e0b9c0cca7
 
 
 カーリーブラケット{}
+	jsx内ではjavascript実行箇所
 	keyがプロパティ名: value 値
 	state自体にカーリーブラケットを設定
 	あと、htmlにjavascriptで宣言された変数を表示するときにも使っている
 
 ここをみて
-https://newsite-make.com/react-study/
+https://newsite-make.com/react-study/		
+	読んだ感じ次はここから
+	https://www.hypertextcandy.com/react-tutorial-03-props-and-state
+		props--->親から子へ渡される属性値
+		state--->子の内部状態
+			{...}で渡したりしている。
+		Componentで渡すところから。あらゆる型を渡せそう
+			↓
+			propsのテストから
+				PropsTest.js作成
+			stateを考える
+				CountButton.jsを作成
+					useStateを使用
+					2つの宣言をする。思い出した
+				新たに
+					Parent.js Child.jsを作成
+					--->動作確認OK
+		一旦コミット(2022/07/11 16:00)
+
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0

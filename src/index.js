@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Parent from './Parent';
+//import PropsTest from './PropsTest';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
 //import CountApp from './CountApp';
 //import TodoApp from './TodoApp';
 //import TodoApp2 from './TodoApp2';
-import TodoApp3 from './TodoApp3';
+//import TodoApp3 from './TodoApp3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TodoApp3 />
-
+    <Parent />
   </React.StrictMode>
 );
 
