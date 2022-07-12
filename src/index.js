@@ -6,8 +6,13 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
+import TestGuess from './TestGuess';
+//import TestPassword2 from './TestPassword2';
+//import TestPassword from './TestPassword';
+//import TestRadio from './TestRadio';
+//import SampleTab from './SampleTab';
 //import SampleCheckBox from './SampleCheckBox';
-import SampleSelectBox from './SampleSelectBox';
+//import SampleSelectBox from './SampleSelectBox';
 //import SampleRadio from './SampleRadio';
 //import SampleText from './SampleText';
 //import CountApp from './CountApp';
@@ -18,7 +23,7 @@ import SampleSelectBox from './SampleSelectBox';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SampleSelectBox />
+    <TestGuess />
   </React.StrictMode>
 );
 

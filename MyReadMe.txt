@@ -102,6 +102,26 @@ https://newsite-make.com/react-study/
 		SampleSelectBox.js作成
 			--->動作確認OK
 		一旦コミット(2022/07/11 17:40)
+		コンポーネントのイベント処理
+			イベントパターン。親側の関数を子側からCall
+		SampleTab.js作成
+			--->動作確認OK
+		問題１
+			TestRadio.js作成
+				getAnswerを中に書く。
+				optionsで値を保持する。find mapなどのメソッドをうまく使う
+		問題２
+			TestPassword.js作成
+				1つの中でやろうとしたのが間違い
+			TestPassword2.js作成
+				inputのtypeのpasswordを使うこと
+		問題３ 数当てゲーム
+			TestGuess.js作成
+			--->動作確認OK
+		一旦コミット(2022/07/12 14:00)
+		フォームとイベントハンドリング終了
+		
+	https://www.hypertextcandy.com/react-tutorial-05-wrap-up-with-todo-app
 
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
