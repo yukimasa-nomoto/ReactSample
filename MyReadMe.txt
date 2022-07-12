@@ -141,5 +141,20 @@ https://newsite-make.com/react-study/
 					Enter押下で、親側のaddをコール
 				Filter箇所
 		一旦コミット(2022/07/12 16:17)
+	https://www.hypertextcandy.com/react-tutorial-06-effect
+		index.jsとindex.htmlを戻す
+		useEffect
+			レンダリング後に実施したい場合
+			第二引数は呼びたいタイミング
+				ないと、毎回実行
+				[]だと初回のみ
+				[]に変数設定すると、それが更新されたときのみ
+			SampleEffect.jsを作成
+				関数を返すと、それがアンマウント時にクリーンアップ関数が行われるのがわかる
+		練習問題１
+			TestDummyUser.jsを作成
+				fetchの種類を３つほど記載
+				表ではなくh1等で簡単に実装
+		一旦コミット(2022/07/12 17:17)
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
