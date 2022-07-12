@@ -120,8 +120,26 @@ https://newsite-make.com/react-study/
 			--->動作確認OK
 		一旦コミット(2022/07/12 14:00)
 		フォームとイベントハンドリング終了
-		
-	https://www.hypertextcandy.com/react-tutorial-05-wrap-up-with-todo-app
 
+	https://www.hypertextcandy.com/react-tutorial-05-wrap-up-with-todo-app
+		どうやって、コンポーネントを考えるか
+			入力箇所
+			タスク
+			処理済みタスク
+			↓
+			Todo
+				Input,Filter
+				TodoItem
+		index.htmlをindex2.htmlにして、あたらしく持ってくる
+		index.jsをindex2.js
+		↓
+		MyTodo.jsをつくる
+			classNames失敗
+			mapの使い方イマイチ。文法的によくわかっていない
+			・タスクを作成
+				Input箇所
+					Enter押下で、親側のaddをコール
+				Filter箇所
+		一旦コミット(2022/07/12 16:17)
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
