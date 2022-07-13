@@ -219,11 +219,21 @@ https://newsite-make.com/react-study/
 					useContext & useReducerでRedux不要へ。
 				stateが１つ
 				引数を渡して、状態更新を１箇所でやってるイメージ
+				dispatchで行う
 				完成したので一旦コミット
 				↓
 				stateを２つ
 					jsonで保持してるだけ。
+					dispatchにtypeとvalueを用意
 				完成したので一旦コミット
+				↓
+		useReducerで外部API
+		axiosを入れる
+			SampleUseReducerAxios.js作成
+				useReducer,useEffect用意
+					dispatchにtypeとpayloadを用意
+				完成したので一旦コミット
+				
 
 	
 	useReducerを調べるか？

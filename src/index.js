@@ -8,7 +8,8 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
-import SampleUseReducer from './SampleUseReducer';
+import SampleUseReducerAxios from './SampleUseReducerAxios';
+//import SampleUseReducer from './SampleUseReducer';
 //import SampleUseContext from './SampleUseContext';
 //import SampleUseEffect from './SampleUseEffect';
 //import TestGif from './TestGif';
@@ -31,7 +32,7 @@ import SampleUseReducer from './SampleUseReducer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SampleUseReducer />
+    <SampleUseReducerAxios />
   </React.StrictMode>
 );
 
