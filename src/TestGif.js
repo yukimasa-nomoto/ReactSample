@@ -16,39 +16,50 @@ function mockApi(){
     })
 }
 
+function useFetchGifs(){
+  const[gifs , setGifs] = React.useState([])
+
+  React.useEffect(() =>{
+    (async() => {
+      const response = await mockApi()
+      setGifs(response)
+    })()
+  },[])
+
+  return gifs
+}
+
+function useSlider(id , gifs){
+  const[slider , setSlider] = React.useState(null)
+    
+  React.useEffect(() => {
+    const instance = new Swiper(id,{
+      spaceBetween: 10,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }    
+    })
+
+    setSlider(instance)
+  },[id])
+
+  React.useEffect(() => {
+    if(gifs.length > 0) {
+      slider.update()
+
+      console.log('update')
+    }
+  },[gifs])
+
+  return slider
+}
+
 function TestGif(){
-    const[gifs , setGifs] = React.useState([])
-    const[slider , setSlider] = React.useState(null)
+    const gifs = useFetchGifs();
+    const slider = useSlider('#slider', gifs);
 
-    React.useEffect(() =>{
-      (async() => {
-        const response = await mockApi()
-        setGifs(response)
-      })()
-    },[])
-
-    
-    React.useEffect(() => {
-      const instance = new Swiper('.swiper-container',{
-        spaceBetween: 10,
-        slidesPerView: 2,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }    
-      })
-
-      setSlider(instance)
-    },[])
-    
-
-    React.useEffect(() => {
-      if(gifs.length > 0) {
-        slider.update()
-
-        console.log('update')
-      }
-    },[gifs])
 
     return(
       <div id="slider" className='swiper-container'>
