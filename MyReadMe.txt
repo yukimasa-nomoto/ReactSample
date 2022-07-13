@@ -172,7 +172,18 @@ https://newsite-make.com/react-study/
 					useをつけてまとめる
 						--->まとめおわり
 					一旦コミット(2022/07/13 11:30)
+	一旦終わったので、次に行く
+	https://qiita.com/seira/items/f063e262b1d57d7e78b4
+		useState編
+			SampleUseState.js作成　
+				今まで使ってた書式のこと。クラス書式は古いみたい。 2020年から変わってそう
+			一旦コミット
+			↓
 
 
+	コレでこのサイトはおわる
+
+https://and-engineer.com/articles/YcfL7BAAACIAryhf
+	三目並べ
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
