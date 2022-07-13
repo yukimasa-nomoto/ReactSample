@@ -8,7 +8,8 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
-import SampleUseContext from './SampleUseContext';
+import SampleUseReducer from './SampleUseReducer';
+//import SampleUseContext from './SampleUseContext';
 //import SampleUseEffect from './SampleUseEffect';
 //import TestGif from './TestGif';
 //import TestDummyUser from './TestDummyUser';
@@ -30,7 +31,7 @@ import SampleUseContext from './SampleUseContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SampleUseContext />
+    <SampleUseReducer />
   </React.StrictMode>
 );
 

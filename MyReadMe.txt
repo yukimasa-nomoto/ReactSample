@@ -209,9 +209,20 @@ https://newsite-make.com/react-study/
 	https://qiita.com/seira/items/fccdf4e73c59c491558d
 		useContext
 			SampleUseContext.js作成
-				グローバル変数	
+				グローバル変数
+				宣言してexportして、誰彼でも呼べるようにしておく	
 			一旦コミット
+	https://qiita.com/seira/items/2fbad56e84bda885c84c
+		useReducer
+			SampleUseReducer.js作成
+				useReducerはuseStateと似ている。関数を返す
+					useContext & useReducerでRedux不要へ。
+				stateが１つ
+				引数を渡して、状態更新を１箇所でやってるイメージ
+				完成したので一旦コミット
 				
+	
+	useReducerを調べるか？
 
 
 	コレでこのサイトはおわる
