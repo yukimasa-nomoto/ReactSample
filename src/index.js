@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import SampleUseState from './SampleUseState';
+//import SampleUseState from './SampleUseState';
 import './index.css';
 //import MyTodo from './MyTodo';
 //import Parent from './Parent';
@@ -8,6 +8,7 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
+import SampleUseEffect from './SampleUseEffect';
 //import TestGif from './TestGif';
 //import TestDummyUser from './TestDummyUser';
 //import SampleEffect from './SampleEffect';
@@ -28,7 +29,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SampleUseState />
+    <SampleUseEffect />
   </React.StrictMode>
 );
 

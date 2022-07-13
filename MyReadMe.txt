@@ -179,6 +179,31 @@ https://newsite-make.com/react-study/
 				今まで使ってた書式のこと。クラス書式は古いみたい。 2020年から変わってそう
 			一旦コミット
 			↓
+			SampleUseEffect.js作成
+				おそらく以前は、ライフサイクルメソッドがあった
+					(componentDidMount componentDidUpdate)
+				https://ja.reactjs.org/docs/hooks-effect.html
+					SideEffectについてここを読む
+						タイトルに[件数]出す場合等に使える
+				↓
+				materialUiをインストール
+				npm install @material-ui/core
+					react18だとうまく入らない
+					↓
+					npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps
+					npm install @mui/icons-material --legacy-peer-deps
+					npm install @mui/styles --legacy-peer-deps
+					--->上手くインストール
+				↓
+				最初の例はOK
+				↓
+				input領域を追加してテスト
+					--->OK
+				↓
+				クリーンアップ関数はeffect内にてreturnした関数の事
+					記載していないがタイマー等では必須
+			一旦コミット
+
 
 
 	コレでこのサイトはおわる
