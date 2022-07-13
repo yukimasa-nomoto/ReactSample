@@ -220,7 +220,11 @@ https://newsite-make.com/react-study/
 				stateが１つ
 				引数を渡して、状態更新を１箇所でやってるイメージ
 				完成したので一旦コミット
-				
+				↓
+				stateを２つ
+					jsonで保持してるだけ。
+				完成したので一旦コミット
+
 	
 	useReducerを調べるか？
 
