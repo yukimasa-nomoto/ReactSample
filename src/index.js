@@ -7,7 +7,8 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
-import TestDummyUser from './TestDummyUser';
+import TestGif from './TestGif';
+//import TestDummyUser from './TestDummyUser';
 //import SampleEffect from './SampleEffect';
 //import TestGuess from './TestGuess';
 //import TestPassword2 from './TestPassword2';
@@ -26,7 +27,7 @@ import TestDummyUser from './TestDummyUser';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TestDummyUser />
+    <TestGif />
   </React.StrictMode>
 );
 

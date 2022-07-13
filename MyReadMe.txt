@@ -156,5 +156,21 @@ https://newsite-make.com/react-study/
 				fetchの種類を３つほど記載
 				表ではなくh1等で簡単に実装
 		一旦コミット(2022/07/12 17:17)
+	
+	https://www.hypertextcandy.com/react-tutorial-07-custom-hook
+		カスタムフック
+			useを頭につけるとカスタムフックとみなされる
+			練習問題１
+				カスタムフックを作る。例文をコピーする
+				TestGif.jsを作成
+					うまくSwiperがnewできない。あきらめる
+					npm install swiper
+					--->動作した?
+						矢印が表示できない
+					↓
+					一旦コミット(2022/07/13 11:00)
+					useをつけてまとめる
+
+
 
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
