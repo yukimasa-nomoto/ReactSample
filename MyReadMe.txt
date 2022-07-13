@@ -179,6 +179,8 @@ https://newsite-make.com/react-study/
 				今まで使ってた書式のこと。クラス書式は古いみたい。 2020年から変わってそう
 			一旦コミット
 			↓
+	https://qiita.com/seira/items/e62890f11e91f6b9653f
+		useEffect
 			SampleUseEffect.js作成
 				おそらく以前は、ライフサイクルメソッドがあった
 					(componentDidMount componentDidUpdate)
@@ -203,7 +205,13 @@ https://newsite-make.com/react-study/
 				クリーンアップ関数はeffect内にてreturnした関数の事
 					記載していないがタイマー等では必須
 			一旦コミット
-
+			↓
+	https://qiita.com/seira/items/fccdf4e73c59c491558d
+		useContext
+			SampleUseContext.js作成
+				グローバル変数	
+			一旦コミット
+				
 
 
 	コレでこのサイトはおわる
