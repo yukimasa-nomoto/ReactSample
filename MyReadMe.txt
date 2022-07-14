@@ -253,6 +253,12 @@ https://newsite-make.com/react-study/
 				useMemoは関数の結果をメモ化
 					returnを返す
 				完成したので一旦コミット
+	https://qiita.com/seira/items/0e6a2d835f1afb50544d
+		useRef
+			SampleUseRef.js作成
+				useRef 値が保持できる
+					DOMを参照できる
+				useRefとuseStateの違いを見てみる
 				
 
 	
