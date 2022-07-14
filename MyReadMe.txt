@@ -244,6 +244,15 @@ https://newsite-make.com/react-study/
 				React.memo 第二引数がある
 					useCallbackを記載
 				完成したので一旦コミット
+	https://qiita.com/seira/items/42576765aecc9fa6b2f8
+		useMemo
+			SampleUseMemo.js作成
+				不要な計算をスキップ
+				useCallbackは関数自体をメモ化
+					関数を返す
+				useMemoは関数の結果をメモ化
+					returnを返す
+				完成したので一旦コミット
 				
 
 	
