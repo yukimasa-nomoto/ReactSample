@@ -233,6 +233,17 @@ https://newsite-make.com/react-study/
 				useReducer,useEffect用意
 					dispatchにtypeとpayloadを用意
 				完成したので一旦コミット
+
+	https://qiita.com/seira/items/8a170cc950241a8fdb23
+		useCallback
+			SampleUseCallback.js作成
+				Ract.memo
+					shallow compare
+				すべてメモ化
+					ボタンが再レンダリングしてしまう
+				React.memo 第二引数がある
+					useCallbackを記載
+				完成したので一旦コミット
 				
 
 	

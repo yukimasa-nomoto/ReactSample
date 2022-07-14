@@ -8,7 +8,8 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
-import SampleUseReducerAxios from './SampleUseReducerAxios';
+import SampleUseCallback from './SampleUseCallback';
+//import SampleUseReducerAxios from './SampleUseReducerAxios';
 //import SampleUseReducer from './SampleUseReducer';
 //import SampleUseContext from './SampleUseContext';
 //import SampleUseEffect from './SampleUseEffect';
@@ -32,7 +33,7 @@ import SampleUseReducerAxios from './SampleUseReducerAxios';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SampleUseReducerAxios />
+    <SampleUseCallback />
   </React.StrictMode>
 );
 
