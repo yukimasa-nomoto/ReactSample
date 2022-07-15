@@ -9,9 +9,8 @@ function Square(props){
     )
 }
 
-function Board(){
+function Board({xIsNext ,onXIsNext , onFinish}){
     const[myHistories,setMyHistories]=React.useState([Array(9).fill(null)])
-    const[xIsNest,setXIsNext] = React.useState(true)
 
 
     const calculateWinner = (squares) => {
@@ -47,16 +46,20 @@ function Board(){
                         return;
                     }
 
-                    squares[i] = xIsNest? '✕' : '◯'
+                    squares[i] = xIsNext? '✕' : '◯'
                     setMyHistories([squares])
-                    setXIsNext(!xIsNest)
+                    onXIsNext(!xIsNext)
                 }}
             />
         )
     }
 
-    let status = 'Next palayer: ' + (xIsNest? '✕' : '◯')
-    if(winner) status = "勝者：" + winner
+    let status = 'Next palayer: ' + (xIsNext? '✕' : '◯')
+    if(winner) {
+        status = "勝者：" + winner
+
+        onFinish()
+    }
 
     return(
         <div>
@@ -83,10 +86,20 @@ function Board(){
 }
 
 function TestGame2(){
+    const[xIsNext,setXIsNext] = React.useState(true)
+
+    const handleNext = (result) =>{
+        setXIsNext(result)
+    }
+
+    const handleFinish = () => {
+        console.log('finish')
+    }
+
     return(
         <div className="game">
             <div className="gmae-board">
-            <Board />
+            <Board xIsNext = {xIsNext} onXIsNext={handleNext} onFinish={handleFinish}/>
             </div>
             <div className="game-info">
             <div>{/* status */}</div>
