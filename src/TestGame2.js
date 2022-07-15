@@ -10,7 +10,7 @@ function Square(props){
 }
 
 function Board(){
-    const[mySquares,setMySquares]=React.useState(Array(9).fill(null))
+    const[myHistories,setMyHistories]=React.useState([Array(9).fill(null)])
     const[xIsNest,setXIsNext] = React.useState(true)
 
 
@@ -34,21 +34,21 @@ function Board(){
           return null;       
     }
 
-    const winner = calculateWinner(mySquares)
+    const winner = calculateWinner(myHistories[0])
     
     const renderSquare = (i) => {
         return(
             <Square 
-                value={mySquares[i]}
+                value={myHistories[0][i]}
                 onClick={() =>{
-                    const squares = Object.create(mySquares)
+                    const squares = Object.create(myHistories[0])
 
                     if(calculateWinner(squares) || squares[i]){
                         return;
                     }
 
                     squares[i] = xIsNest? '✕' : '◯'
-                    setMySquares(squares)
+                    setMyHistories([squares])
                     setXIsNext(!xIsNest)
                 }}
             />
