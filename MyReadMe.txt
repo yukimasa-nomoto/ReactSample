@@ -295,5 +295,7 @@ https://and-engineer.com/articles/YcfL7BAAACIAryhf
 				うまくクロージャーをつかってるから、こっちの方が良い
 				↓
 				一旦完成 あとで履歴を用意する
+			↓
+			履歴も設定可能。終了
 	
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0

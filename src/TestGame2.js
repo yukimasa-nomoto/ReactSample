@@ -45,9 +45,30 @@ function Board({squares , onClick}){
 function TestGame2(){
     const[xIsNext,setXIsNext] = React.useState(true)
     const[myHistory,setMyHistory]=React.useState([{squares:Array(9).fill(null)}])
+    const[stepNumber , setStepNumber]=React.useState(0)
 
+    const moves = myHistory.map((step,move)=>{
+        const desc = move ? 'Go to move #' + move : 'Go to game start';
+        return(
+            <li key={move}>
+                <button
+                    onClick={() =>{
+                        //console.log('move')
+                        //console.log(move)
 
-    const current = myHistory[myHistory.length-1]
+                        //console.log('step')
+                        //console.log(step)
+
+                        setStepNumber(move)
+                        setXIsNext(move%2 === 0)
+                    }}
+                >
+                    {desc}
+                </button>
+            </li>
+            
+        )
+    })
 
     const calculateWinner = (squares) => {
         const lines = [
@@ -69,6 +90,7 @@ function TestGame2(){
           return null;       
     }
 
+    const current = myHistory[stepNumber]
     const winner = calculateWinner(current.squares)
 
     let status = 'Next palayer: ' + (xIsNext? '✕' : '◯')
@@ -99,20 +121,21 @@ function TestGame2(){
                     //console.log("myHistory")
                     //console.log(myHistory)
 
+                    const newHistory = myHistory.slice(0, stepNumber + 1);
                     const copyHistory =
-                        myHistory.concat({squares:copySquares})
+                        newHistory.concat({squares:copySquares})
                     
                     //console.log("copyHistory")
                     //console.log(copyHistory)
                     setMyHistory(copyHistory)
                     setXIsNext(!xIsNext)
-                    
+                    setStepNumber(newHistory.length)
                 }}
             />
             </div>
             <div className="game-info">
             <div className="status">{status}</div>
-            <div>{/* TODO */}</div>
+            <div>{moves}</div>
             </div>
         </div>    
     )
