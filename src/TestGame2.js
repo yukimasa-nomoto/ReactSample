@@ -9,7 +9,7 @@ function Square(props){
     )
 }
 
-function Board({xIsNext , myHistories , onXIsNext , onFinish , onHistory}){
+function Board({xIsNext , squares , onXIsNext , onFinish , onSquare}){
 
 
     const calculateWinner = (squares) => {
@@ -32,21 +32,21 @@ function Board({xIsNext , myHistories , onXIsNext , onFinish , onHistory}){
           return null;       
     }
 
-    const winner = calculateWinner(myHistories[0])
+    const winner = calculateWinner(squares)
     
     const renderSquare = (i) => {
         return(
             <Square 
-                value={myHistories[0][i]}
+                value={squares[i]}
                 onClick={() =>{
-                    const squares = Object.create(myHistories[0])
+                    const copySquares = Object.create(squares)
 
-                    if(calculateWinner(squares) || squares[i]){
+                    if(calculateWinner(copySquares) || copySquares[i]){
                         return;
                     }
 
-                    squares[i] = xIsNext? '✕' : '◯'
-                    onHistory([squares])
+                    copySquares[i] = xIsNext? '✕' : '◯'
+                    onSquare(copySquares)
                     onXIsNext(!xIsNext)
                 }}
             />
@@ -86,7 +86,7 @@ function Board({xIsNext , myHistories , onXIsNext , onFinish , onHistory}){
 
 function TestGame2(){
     const[xIsNext,setXIsNext] = React.useState(true)
-    const[myHistories,setMyHistories]=React.useState([Array(9).fill(null)])
+    const[myHistory,setMyHistory]=React.useState([{squares:Array(9).fill(null)}])
 
     const handleNext = (result) =>{
         setXIsNext(result)
@@ -96,15 +96,17 @@ function TestGame2(){
         console.log('finish')
     }
 
-    const handleHistory = (his) => {
-        setMyHistories(his)
+    const handleSquares = (his) => {
+        setMyHistory([his])
     }
+
+    const current = myHistory[myHistory.length-1]
 
     return(
         <div className="game">
             <div className="gmae-board">
-            <Board xIsNext = {xIsNext} myHistories={myHistories}
-                onXIsNext={handleNext} onHistory={handleHistory} onFinish={handleFinish}/>
+            <Board xIsNext = {xIsNext} squares={current}
+                onXIsNext={handleNext} onSquare={handleSquares} onFinish={handleFinish}/>
             </div>
             <div className="game-info">
             <div>{/* status */}</div>
