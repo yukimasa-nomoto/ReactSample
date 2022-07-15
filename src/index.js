@@ -8,7 +8,8 @@ import './index.css';
 //import App from './App';
 //import HelloWorld from './HelloWorld';
 import reportWebVitals from './reportWebVitals';
-import SampleUseRef from './SampleUseRef';
+import TestGame2 from './TestGame2';
+//import SampleUseRef from './SampleUseRef';
 //import SampleUseMemo from './SampleUseMemo';
 //import SampleUseCallback from './SampleUseCallback';
 //import SampleUseReducerAxios from './SampleUseReducerAxios';
@@ -35,7 +36,7 @@ import SampleUseRef from './SampleUseRef';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SampleUseRef />
+    <TestGame2 />
   </React.StrictMode>
 );
 

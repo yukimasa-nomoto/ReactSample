@@ -259,15 +259,41 @@ https://newsite-make.com/react-study/
 				useRef 値が保持できる
 					DOMを参照できる
 				useRefとuseStateの違いを見てみる
-				
+				完成したので一旦コミット
+	コレでこのサイトはおわる
+
+	mui.comをみるか？
+		わりとよさげ。coreは無料っぽく見える
 
 	
 	useReducerを調べるか？
 
+	typescriptをどうするか？
 
-	コレでこのサイトはおわる
+	.net core reactをみてみるか？
+		<App>
+			<Layout>
+				NavMenu
+					Navvar(ReactStrap)
+				<Routes>
+					AppRoutes.map
+						<Route>
+			ちょっと古い
+		ReactのAppRoutes
+			→関係ない気がする。
 
 https://and-engineer.com/articles/YcfL7BAAACIAryhf
 	三目並べ
-
+		TestGame.jsを作成
+			マス目のサンプルを今っぽく変更する
+				--->コピー成功
+			↓
+			うまくいくかわからないが。字だけを読みながら進める
+	https://qiita.com/GodPhwng/items/d7bc022dd12fde4cab63
+		ここに答えがある
+			TestGame2.jsに実装していく
+				うまくクロージャーをつかってるから、こっちの方が良い
+				↓
+				一旦完成 あとで履歴を用意する
+	
 https://qiita.com/d0ne1s/items/971ffc8db6815e9aaad0
